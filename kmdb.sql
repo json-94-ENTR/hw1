@@ -127,11 +127,11 @@ CREATE TABLE studios (
     first_name TEXT,
     last_name TEXT,
 );
-CREATE TABLE characters(
+CREATE TABLE characters (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     movie_id INTEGER,
     actor_id INTEGER,
-    character name TEXT 
+    role TEXT 
 );
 
 -- Insert data into your database that reflects the sample data shown above
