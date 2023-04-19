@@ -122,10 +122,11 @@ CREATE TABLE studios (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name TEXT,
     movie_id INTEGER
-);CREATE TABLE actors (
+);
+CREATE TABLE actors (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     first_name TEXT,
-    last_name TEXT,
+    last_name TEXT
 );
 CREATE TABLE characters (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -137,7 +138,19 @@ CREATE TABLE characters (
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
 -- TODO!
-
+INSERT INTO movies (
+    title,
+    year,
+    MPAA,
+    studio_id
+    )
+VALUES (
+    "Batman Begins",
+    "2005",
+    "PG-13",
+    "Warner Bros."
+    );
+SELECT * FROM movies;
 
 -- Prints a header for the movies output
 .print "Movies"
@@ -146,10 +159,7 @@ CREATE TABLE characters (
 
 -- The SQL statement for the movies output
 -- TODO!
-SELECT movies.title, movies.year, movies.MPAA, studios_name
-FROM studios
-INNER JOIN movies ON movies.studio_id = studio.id
-;
+
 
 -- Prints a header for the cast output
 .print ""
