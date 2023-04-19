@@ -113,21 +113,21 @@ DROP TABLE IF EXISTS characters;
 -- TODO!
 CREATE TABLE movies (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    movie_title TEXT,
-    year_released INTEGER,
-    MPAA_rating INTEGER,
-    studio_name TEXT
+    title TEXT,
+    year INTEGER,
+    MPAA INTEGER,
+    studio_id INTEGER
 );
 CREATE TABLE studios (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    studio_name TEXT,
+    name TEXT,
     movie_id INTEGER
 );CREATE TABLE actors (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     first_name TEXT,
     last_name TEXT,
-    movie_id INTEGER
-);CREATE TABLE characters(
+);
+CREATE TABLE characters(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     movie_id INTEGER,
     actor_id INTEGER,
