@@ -148,20 +148,33 @@ VALUES (
     "Batman Begins",
     "2005",
     "PG-13",
-    "Warner Bros."
-    );
+    "1"
+);
+INSERT INTO movies (
+    title,
+    year,
+    MPAA,
+    studio_id
+)
 VALUES (
     "The Dark Knight",
     "2008",
     "PG-13",
-    "Warner Bros."
-    );
+    "1"
+);
+INSERT INTO movies (
+    title,
+    year,
+    MPAA,
+    studio_id
+)
 VALUES (
     "The Dark Knight Rises",
     "2012",
     "PG-13",
-    "Warner Bros."
+    "1"
     );
+SELECT * FROM movies;
 
 -- Prints a header for the movies output
 .print "Movies"
