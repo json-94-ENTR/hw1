@@ -106,7 +106,7 @@
 -- Drop existing tables, so you'll start fresh each time this script is run.
 -- TODO!
 DROP TABLE IF EXISTS movies;
-
+DROP TABLE IF EXISTS studios;
 -- Create new tables, according to your domain model
 -- TODO!
 CREATE TABLE movies (
@@ -115,6 +115,11 @@ CREATE TABLE movies (
     year_released INTEGER,
     MPAA_rating INTEGER,
     studio TEXT
+);
+CREATE TABLE studios (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    studio TEXT,
+    movie_id INTEGER
 );
 
 -- Insert data into your database that reflects the sample data shown above
