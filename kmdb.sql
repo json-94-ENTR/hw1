@@ -138,6 +138,7 @@ CREATE TABLE characters (
 -- Use hard-coded foreign key IDs when necessary
 -- TODO!
 
+
 -- Prints a header for the movies output
 .print "Movies"
 .print "======"
@@ -145,6 +146,10 @@ CREATE TABLE characters (
 
 -- The SQL statement for the movies output
 -- TODO!
+SELECT movies.title, movies.year, movies.MPAA, studios_name
+FROM studios
+INNER JOIN movies ON movies.studio_id = studio.id
+;
 
 -- Prints a header for the cast output
 .print ""
