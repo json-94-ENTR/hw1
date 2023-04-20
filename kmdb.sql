@@ -213,7 +213,7 @@ INSERT INTO actors (
 )
 VALUES (
     "Katie",
-    "HOlmes"
+    "Holmes"
 );
 INSERT INTO actors (
     first_name,
@@ -313,8 +313,118 @@ VALUES (
     "3",
     "Rachel Dawes"
 );
-
-
+INSERT INTO characters (
+    movie_id,
+    actor_id,
+    role
+)
+VALUES (
+    "1",
+    "5",
+    "Commissioner Gordon"
+);
+INSERT INTO characters (
+    movie_id,
+    actor_id,
+    role
+)
+VALUES (
+    "2",
+    "1",
+    "Bruce Wayne"
+);
+INSERT INTO characters (
+    movie_id,
+    actor_id,
+    role
+)
+VALUES (
+    "2",
+    "6",
+    "Joker"
+);
+INSERT INTO characters (
+    movie_id,
+    actor_id,
+    role
+)
+VALUES (
+    "2",
+    "7",
+    "Harvey Dent"
+);
+INSERT INTO characters (
+    movie_id,
+    actor_id,
+    role
+)
+VALUES (
+    "2",
+    "2",
+    "Alfred"
+);
+INSERT INTO characters (
+    movie_id,
+    actor_id,
+    role
+)
+VALUES (
+    "2",
+    "8",
+    "Rachel Dawes"
+);
+INSERT INTO characters (
+    movie_id,
+    actor_id,
+    role
+)
+VALUES (
+    "3",
+    "1",
+    "Bruce Wayne"
+);
+INSERT INTO characters (
+    movie_id,
+    actor_id,
+    role
+)
+VALUES (
+    "3",
+    "5",
+    "Comissioner Gordon"
+);
+INSERT INTO characters (
+    movie_id,
+    actor_id,
+    role
+)
+VALUES (
+    "3",
+    "9",
+    "Bane"
+);
+INSERT INTO characters (
+    movie_id,
+    actor_id,
+    role
+)
+VALUES (
+    "3",
+    "10",
+    "John Blake"
+);
+INSERT INTO characters (
+    movie_id,
+    actor_id,
+    role
+)
+VALUES (
+    "3",
+    "11",
+    "Selina Kyle"
+);
+SELECT * FROM characters;
+--End populated data tables--
 
 
 
