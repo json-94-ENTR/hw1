@@ -120,8 +120,7 @@ CREATE TABLE movies (
 );
 CREATE TABLE studios (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name TEXT,
-    movie_id INTEGER
+    name TEXT
 );
 CREATE TABLE actors (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -175,6 +174,153 @@ VALUES (
     "1"
     );
 SELECT * FROM movies;
+
+INSERT INTO studios (
+    name
+)
+VALUES (
+    "Warner Bros."
+);
+SELECT * FROM studios;
+
+INSERT INTO actors (
+    first_name,
+    last_name
+)
+VALUES (
+    "Christian",
+    "Bale"
+);
+INSERT INTO actors (
+    first_name,
+    last_name
+)
+VALUES (
+    "Michael",
+    "Caine"
+);
+INSERT INTO actors (
+    first_name,
+    last_name
+)
+VALUES (
+    "Liam",
+    "Neeson"
+);
+INSERT INTO actors (
+    first_name,
+    last_name
+)
+VALUES (
+    "Katie",
+    "HOlmes"
+);
+INSERT INTO actors (
+    first_name,
+    last_name
+)
+VALUES (
+    "Gary",
+    "Oldman"
+);
+INSERT INTO actors (
+    first_name,
+    last_name
+)
+VALUES (
+    "Heath",
+    "Ledger"
+);
+INSERT INTO actors (
+    first_name,
+    last_name
+)
+VALUES (
+    "Aaron",
+    "Eckhart"
+);
+INSERT INTO actors (
+    first_name,
+    last_name
+)
+VALUES (
+    "Maggie",
+    "Gyllenhaal"
+);
+INSERT INTO actors (
+    first_name,
+    last_name
+)
+VALUES (
+    "Tom",
+    "Hardy"
+);
+INSERT INTO actors (
+    first_name,
+    last_name
+)
+VALUES (
+    "Joseph",
+    "Gordon-Levitt"
+);
+INSERT INTO actors (
+    first_name,
+    last_name
+)
+VALUES (
+    "Anne",
+    "Hathaway"
+);
+SELECT * FROM actors;
+
+INSERT INTO characters (
+    movie_id,
+    actor_id,
+    role
+)
+VALUES (
+    "1",
+    "1",
+    "Bruce Wayne"
+);
+INSERT INTO characters (
+    movie_id,
+    actor_id,
+    role
+)
+VALUES (
+    "1",
+    "2",
+    "Alfred"
+);
+INSERT INTO characters (
+    movie_id,
+    actor_id,
+    role
+)
+VALUES (
+    "1",
+    "3",
+    "Ra's Al Ghul"
+);
+INSERT INTO characters (
+    movie_id,
+    actor_id,
+    role
+)
+VALUES (
+    "1",
+    "3",
+    "Rachel Dawes"
+);
+
+
+
+
+
+
+
+
 
 -- Prints a header for the movies output
 .print "Movies"
