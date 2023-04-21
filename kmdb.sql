@@ -459,3 +459,4 @@ INNER JOIN movies ON characters.movie_id=movies.id
 INNER JOIN actors ON characters.actor_id=actors.id
 ORDER BY movies.title
 ;
+--Googled around for a concat function for sqlite to try and make the table format match since I had the actor's first and last names broken out into separate columns per previous class examples
