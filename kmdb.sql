@@ -137,6 +137,7 @@ CREATE TABLE characters (
 -- Insert data into your database that reflects the sample data shown above
 -- Use hard-coded foreign key IDs when necessary
 -- TODO!
+--Populated Movies Table
 INSERT INTO movies (
     title,
     year,
@@ -175,6 +176,7 @@ VALUES (
     );
 SELECT * FROM movies;
 
+--Populted studios table
 INSERT INTO studios (
     name
 )
@@ -183,6 +185,7 @@ VALUES (
 );
 SELECT * FROM studios;
 
+--Populated actors table
 INSERT INTO actors (
     first_name,
     last_name
@@ -273,6 +276,7 @@ VALUES (
 );
 SELECT * FROM actors;
 
+--Populated characters table
 INSERT INTO characters (
     movie_id,
     actor_id,
@@ -424,13 +428,8 @@ VALUES (
     "Selina Kyle"
 );
 SELECT * FROM characters;
---End populated data tables--
 
-
-
-
-
-
+--End populated data tables
 
 -- Prints a header for the movies output
 .print "Movies"
@@ -439,6 +438,11 @@ SELECT * FROM characters;
 
 -- The SQL statement for the movies output
 -- TODO!
+SELECT movies.title, movies.year, movies.MPAA, studios.name
+FROM movies
+INNER JOIN studios ON movies.studio_id=studios.id
+;
+
 
 -- Prints a header for the cast output
 .print ""
@@ -449,3 +453,9 @@ SELECT * FROM characters;
 
 -- The SQL statement for the cast output
 -- TODO!
+SELECT movies.title, actors.first_name || " " || actors.last_name, characters.role
+FROM characters
+INNER JOIN movies ON characters.movie_id=movies.id
+INNER JOIN actors ON characters.actor_id=actors.id
+ORDER BY movies.title
+;
